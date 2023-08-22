@@ -1,0 +1,22 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+
+ul {
+    display: flex;
+    justify-content: flex-end; /* Align elements to the right */
+    list-style: none;
+    margin-left: 0; /* Push the ul to the right */
+    padding: 0;
+}
+
+li {
+    margin: 0 40px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}

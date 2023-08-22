@@ -1,0 +1,40 @@
+/* Apply styles to the container div */
+
+.textinput {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    min-height: 40vh;
+    padding: 100px;
+    margin: 5px;
+} 
+
+/* Apply styles to the input element */
+.custom-textarea {
+    width:800px;
+    padding: 30px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    resize: none;
+    /* overflow-y: hidden; */
+    font-family: Arial;
+    font-size: 40px;
+    line-height: 1.5; 
+    position: relative;
+    /* Add visible lines to the textarea*/
+}
+
+.custom-textarea::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent 50%, #ccc 50%);
+    background-size: 100% 30px; 
+    pointer-events: none;
+    z-index: -1;
+}
